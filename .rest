@@ -1,7 +1,7 @@
 GET http://localhost:3000
 
 ###
-https://cse341-winter25.onrender.com
+https://cse341-fall2025.onrender.com
 
 ###
-https://github.com/Rellinxe27/cse341-winter25
+https://github.com/Rellinxe27/cse341-fall2025
