@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 
 // Routes
-app.use('/', require('./routess'));
+app.use('/', require('./routes'));
 
 // Error handling middleware
 app.use((err, req, res, next) => {
