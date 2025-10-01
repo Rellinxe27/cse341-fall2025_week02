@@ -1,11 +1,15 @@
-// server.js
 const express = require('express');
 const app = express();
 
 app.use(express.json());
 
-// Routes
-app.use('/', require('./routes'));
+// Root route - returns a name
+app.get('/', (req, res) => {
+    res.send('Sarah Birch');
+});
+
+// Name routes
+app.use('/name', require('./routes/someoneName'));
 
 // Error handling middleware
 app.use((err, req, res, next) => {

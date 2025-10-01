@@ -1,4 +1,4 @@
-GET http://localhost:3000
+GET http://localhost:3000/name
 
 ###
 https://cse341-fall2025-pnf4.onrender.com

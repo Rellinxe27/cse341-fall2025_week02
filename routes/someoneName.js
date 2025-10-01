@@ -1,9 +1,7 @@
-// routes/someoneName.js
 const express = require('express');
 const router = express.Router();
-const { someoneNameController } = require('../controllers');
+const { getName } = require('../controllers/someoneNameController');
 
-// Routes using controller methods
-router.get('/', someoneNameController.getName);
+router.get('/', getName);
 
 module.exports = router;
