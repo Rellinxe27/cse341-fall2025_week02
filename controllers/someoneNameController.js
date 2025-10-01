@@ -1,6 +1,6 @@
 const getName = async (req, res) => {
     try {
-        res.send('Sarah Birch');
+        res.send('Skyla Allianna');
     } catch (error) {
         res.status(500).json({ message: error.message });
     }
