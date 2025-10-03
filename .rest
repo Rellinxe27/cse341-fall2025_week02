@@ -4,7 +4,6 @@ GET http://localhost:3000/contacts
 ### Get single contact by ID
 GET http://localhost:3000/contacts/68e04363258e19e4ad2c508d
 
-https://cse341-fall2025-pnf4.onrender.com
 
 ###
 https://github.com/Rellinxe27/cse341-fall2025
