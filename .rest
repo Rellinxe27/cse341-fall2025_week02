@@ -1,4 +1,4 @@
-GET http://localhost:3000/name
+GET http://localhost:3000/contacts/68e04363258e19e4ad2c508d
 
 ###
 https://cse341-fall2025-pnf4.onrender.com

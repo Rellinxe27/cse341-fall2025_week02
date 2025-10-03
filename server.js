@@ -1,15 +1,17 @@
+require('dotenv').config();
 const express = require('express');
+const connectDB = require('./db/connect');
 const app = express();
 
 app.use(express.json());
 
-// Root route - returns a name
+// Root route
 app.get('/', (req, res) => {
     res.send('Sarah Birch');
 });
 
-// Name routes
-app.use('/name', require('./routes/someoneName'));
+// Routes
+app.use('/contacts', require('./routes/contacts'));
 
 // Error handling middleware
 app.use((err, req, res, next) => {
@@ -23,6 +25,9 @@ app.use((req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+
+connectDB().then(() => {
+    app.listen(PORT, () => {
+        console.log(`Server running on port ${PORT}`);
+    });
 });
