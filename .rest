@@ -1,9 +1,14 @@
+// LOCALHOST
 ### Get all contacts
-GET http://localhost:3000/contacts
+GET http://localhost:8080/contacts
 
 ### Get single contact by ID
-GET http://localhost:3000/contacts/68e04363258e19e4ad2c508d
+GET http://localhost:8080/contacts/68e04363258e19e4ad2c508f
+### Get single contact by ID
+GET http://localhost:8080/contacts/68e04363258e19e4ad2c508d
+### Get single contact by ID
+GET http://localhost:8080/contacts/68e04363258e19e4ad2c508e
 
-
+// production
 ###
 https://github.com/Rellinxe27/cse341-fall2025

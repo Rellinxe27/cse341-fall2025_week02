@@ -1,4 +1,4 @@
-require('dotenv').config();
+//require('dotenv').config();
 const express = require('express');
 const connectDB = require('./db/connect');
 const app = express();
@@ -6,12 +6,7 @@ const app = express();
 app.use(express.json());
 
 // Root route
-app.get('/', (req, res) => {
-    res.send('Sarah Birch');
-});
-
-// Routes
-app.use('/contacts', require('./routes/contacts'));
+app.use('/', require('./routes'));
 
 // Error handling middleware
 app.use((err, req, res, next) => {
@@ -24,7 +19,7 @@ app.use((req, res) => {
     res.status(404).json({ message: 'Route not found' });
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 connectDB().then(() => {
     app.listen(PORT, () => {
