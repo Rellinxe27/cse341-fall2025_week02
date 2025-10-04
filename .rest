@@ -9,6 +9,16 @@ GET http://localhost:8080/contacts/68e04363258e19e4ad2c508d
 ### Get single contact by ID
 GET http://localhost:8080/contacts/68e04363258e19e4ad2c508e
 
-// production
+// Github
+### Github Week02 branch
+https://github.com/Rellinxe27/cse341-fall2025/tree/week02
+
+// production (Render)
 ###
-https://github.com/Rellinxe27/cse341-fall2025
+https://cse341-fall2025-week02.onrender.com
+###
+https://cse341-fall2025-week02.onrender.com/contacts/68e04363258e19e4ad2c508f
+###
+https://cse341-fall2025-week02.onrender.com/contacts/68e04363258e19e4ad2c508d
+###
+https://cse341-fall2025-week02.onrender.com/contacts/68e04363258e19e4ad2c508e
